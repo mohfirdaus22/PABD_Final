@@ -48,11 +48,20 @@ namespace PABD_Final
         public Koki()
         {
             InitializeComponent();
+            koneksi = new SqlConnection(stringConnection);
+            refreshform();
         }
 
         private void Koki_Load(object sender, EventArgs e)
         {
 
+        }
+
+        //button open
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            dataGridView();
+            btnOpen.Enabled = false;
         }
     }
 }
