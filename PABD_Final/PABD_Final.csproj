@@ -99,6 +99,9 @@
     <EmbeddedResource Include="Koki.resx">
       <DependentUpon>Koki.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuResto.resx">
+      <DependentUpon>MenuResto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu_Utama.resx">
       <DependentUpon>Menu_Utama.cs</DependentUpon>
     </EmbeddedResource>
