@@ -44,6 +44,8 @@
             this.txtalamat = new System.Windows.Forms.TextBox();
             this.txtnotelp = new System.Windows.Forms.TextBox();
             this.txtemail = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cbxIdkasir = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -187,11 +189,31 @@
             this.txtemail.Size = new System.Drawing.Size(231, 22);
             this.txtemail.TabIndex = 16;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(186, 367);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(51, 16);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Id Kasir";
+            // 
+            // cbxIdkasir
+            // 
+            this.cbxIdkasir.FormattingEnabled = true;
+            this.cbxIdkasir.Location = new System.Drawing.Point(343, 362);
+            this.cbxIdkasir.Name = "cbxIdkasir";
+            this.cbxIdkasir.Size = new System.Drawing.Size(231, 24);
+            this.cbxIdkasir.TabIndex = 18;
+            this.cbxIdkasir.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // Pembeli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbxIdkasir);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.txtemail);
             this.Controls.Add(this.txtnotelp);
             this.Controls.Add(this.txtalamat);
@@ -235,5 +257,7 @@
         private System.Windows.Forms.TextBox txtalamat;
         private System.Windows.Forms.TextBox txtnotelp;
         private System.Windows.Forms.TextBox txtemail;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cbxIdkasir;
     }
 }

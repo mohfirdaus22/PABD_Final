@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnMenuResto = new System.Windows.Forms.Button();
             this.btnSuplier = new System.Windows.Forms.Button();
             this.btnPembeli = new System.Windows.Forms.Button();
             this.btnKasir = new System.Windows.Forms.Button();
             this.btnKoki = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button5
+            // btnMenuResto
             // 
-            this.button5.Location = new System.Drawing.Point(647, 179);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(105, 93);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnMenuResto.Location = new System.Drawing.Point(647, 179);
+            this.btnMenuResto.Name = "btnMenuResto";
+            this.btnMenuResto.Size = new System.Drawing.Size(105, 93);
+            this.btnMenuResto.TabIndex = 9;
+            this.btnMenuResto.Text = "Menu Resto";
+            this.btnMenuResto.UseVisualStyleBackColor = true;
+            this.btnMenuResto.Click += new System.EventHandler(this.button5_Click);
             // 
             // btnSuplier
             // 
@@ -89,7 +90,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnMenuResto);
             this.Controls.Add(this.btnSuplier);
             this.Controls.Add(this.btnPembeli);
             this.Controls.Add(this.btnKasir);
@@ -102,7 +103,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnMenuResto;
         private System.Windows.Forms.Button btnSuplier;
         private System.Windows.Forms.Button btnPembeli;
         private System.Windows.Forms.Button btnKasir;

@@ -42,6 +42,7 @@
             this.txtnama = new System.Windows.Forms.TextBox();
             this.txtnotelp = new System.Windows.Forms.TextBox();
             this.txtalamat = new System.Windows.Forms.TextBox();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -168,11 +169,22 @@
             this.txtalamat.Size = new System.Drawing.Size(225, 22);
             this.txtalamat.TabIndex = 13;
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(673, 387);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(85, 36);
+            this.btnDelete.TabIndex = 14;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // Koki
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.txtalamat);
             this.Controls.Add(this.txtnotelp);
             this.Controls.Add(this.txtnama);
@@ -212,5 +224,6 @@
         private System.Windows.Forms.TextBox txtnama;
         private System.Windows.Forms.TextBox txtnotelp;
         private System.Windows.Forms.TextBox txtalamat;
+        private System.Windows.Forms.Button btnDelete;
     }
 }

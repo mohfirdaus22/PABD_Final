@@ -67,6 +67,7 @@ namespace PABD_Final
             string email = txtemail.Text;
             string notelp = txtnotelp.Text;
             string alamat = txtalamat.Text;
+            string idkasir = cbxIdkasir.Text;
 
             if (idpembeli == "")
             {
@@ -88,10 +89,14 @@ namespace PABD_Final
             {
                 MessageBox.Show("Masukkan Alamat", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            if ( idkasir== "")
+            {
+                MessageBox.Show("Masukkan Id Kasir", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
             else
             {
                 koneksi.Open();
-                string str = "INSERT INTO Pembeli (Id_pembeli, Nama, Email,No_telp, Alamat) VALUES (@id_pembeli, @nama, @email, @No_telp, @alamat)";
+                string str = "INSERT INTO Pembeli (Id_pembeli, Nama, Email,No_telp, Alamat, Id_kasir) VALUES (@id_pembeli, @nama, @email, @No_telp, @alamat, @id_kasir)";
                 SqlCommand cmd = new SqlCommand(str, koneksi);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.Add(new SqlParameter("@Id_pembeli", idpembeli));
@@ -99,6 +104,7 @@ namespace PABD_Final
                 cmd.Parameters.Add(new SqlParameter("@No_telp", notelp));
                 cmd.Parameters.Add(new SqlParameter("@Nama", nama));
                 cmd.Parameters.Add(new SqlParameter("@Alamat", alamat));
+                cmd.Parameters.Add(new SqlParameter("@Id_kasir", idkasir));
 
                 cmd.ExecuteNonQuery();
 
@@ -132,6 +138,29 @@ namespace PABD_Final
 
         }
 
+        private void LoadKasir()
+        {
+            try
+            {
+                koneksi.Open();
+                string query = "SELECT Id_kasir FROM Kasir";
+                SqlCommand command = new SqlCommand(query, koneksi);
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    cbxIdkasir.Items.Add(reader["Id_kasir"].ToString());
+                }
+
+                reader.Close();
+                koneksi.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
         //button clear
         private void btnClear_Click(object sender, EventArgs e)
         {
@@ -143,5 +172,7 @@ namespace PABD_Final
         {
             this.Close();
         }
+
+       
     }
 }

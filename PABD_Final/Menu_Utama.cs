@@ -46,5 +46,12 @@ namespace PABD_Final
             fs.Show();
             this.Hide();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MenuResto fmr = new MenuResto();
+            fmr.Show();
+            this.Hide();
+        }
     }
 }
