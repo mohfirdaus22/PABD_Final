@@ -116,5 +116,15 @@ namespace PABD_Final
                 refreshform();
             }
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            refreshform();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
