@@ -30,7 +30,7 @@
         {
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnPembeli = new System.Windows.Forms.Button();
             this.btnKasir = new System.Windows.Forms.Button();
             this.btnKoki = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -53,14 +53,15 @@
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnPembeli
             // 
-            this.button3.Location = new System.Drawing.Point(340, 179);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(105, 93);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnPembeli.Location = new System.Drawing.Point(340, 179);
+            this.btnPembeli.Name = "btnPembeli";
+            this.btnPembeli.Size = new System.Drawing.Size(105, 93);
+            this.btnPembeli.TabIndex = 7;
+            this.btnPembeli.Text = "Pembeli";
+            this.btnPembeli.UseVisualStyleBackColor = true;
+            this.btnPembeli.Click += new System.EventHandler(this.btnPembeli_Click);
             // 
             // btnKasir
             // 
@@ -89,7 +90,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnPembeli);
             this.Controls.Add(this.btnKasir);
             this.Controls.Add(this.btnKoki);
             this.Name = "Menu_Utama";
@@ -102,7 +103,7 @@
 
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnPembeli;
         private System.Windows.Forms.Button btnKasir;
         private System.Windows.Forms.Button btnKoki;
     }

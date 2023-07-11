@@ -32,5 +32,12 @@ namespace PABD_Final
             fkas.Show();
             this.Hide();
         }
+
+        private void btnPembeli_Click(object sender, EventArgs e)
+        {
+            Pembeli fp = new Pembeli();
+            fp.Show();
+            this.Hide();
+        }
     }
 }
