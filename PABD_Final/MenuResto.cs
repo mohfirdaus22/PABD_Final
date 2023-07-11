@@ -60,5 +60,17 @@ namespace PABD_Final
             dataGridView();
             btnOpen.Enabled = false;
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            txtkodemenu.Enabled = true;
+            txtnama.Enabled = true;
+            txtstok.Enabled = true;
+            txtharga.Enabled = true;
+            btnSave.Enabled = true;
+            btnOpen.Enabled = true;
+            btnClear.Enabled = true;
+
+        }
     }
 }
