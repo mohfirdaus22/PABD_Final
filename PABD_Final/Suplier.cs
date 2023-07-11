@@ -88,7 +88,7 @@ namespace PABD_Final
             else
             {
                 koneksi.Open();
-                string str = "INSERT INTO Pembeli (Id_supl, Nama,No_telp, Kota_asal) VALUES (@id_supl, @nama, @No_telp, @kotaasal)";
+                string str = "INSERT INTO Suplier (Id_supl, Nama,No_telp, Kota_asal) VALUES (@id_supl, @nama, @No_telp, @Kota_asal)";
                 SqlCommand cmd = new SqlCommand(str, koneksi);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.Add(new SqlParameter("@Id_supl", idsupl));

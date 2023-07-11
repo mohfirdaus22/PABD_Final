@@ -64,6 +64,12 @@
     <Compile Include="Koki.Designer.cs">
       <DependentUpon>Koki.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuResto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuResto.Designer.cs">
+      <DependentUpon>MenuResto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu_Utama.cs">
       <SubType>Form</SubType>
     </Compile>

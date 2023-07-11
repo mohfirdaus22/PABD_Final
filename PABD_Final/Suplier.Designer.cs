@@ -51,6 +51,7 @@
             this.txtnotelp.Name = "txtnotelp";
             this.txtnotelp.Size = new System.Drawing.Size(231, 22);
             this.txtnotelp.TabIndex = 31;
+            this.txtnotelp.TextChanged += new System.EventHandler(this.txtnotelp_TextChanged);
             // 
             // txtkotaasal
             // 
@@ -58,6 +59,7 @@
             this.txtkotaasal.Name = "txtkotaasal";
             this.txtkotaasal.Size = new System.Drawing.Size(231, 22);
             this.txtkotaasal.TabIndex = 30;
+            this.txtkotaasal.TextChanged += new System.EventHandler(this.txtkotaasal_TextChanged);
             // 
             // txtnama
             // 
@@ -65,6 +67,7 @@
             this.txtnama.Name = "txtnama";
             this.txtnama.Size = new System.Drawing.Size(231, 22);
             this.txtnama.TabIndex = 29;
+            this.txtnama.TextChanged += new System.EventHandler(this.txtnama_TextChanged);
             // 
             // txtidsupl
             // 
@@ -72,6 +75,7 @@
             this.txtidsupl.Name = "txtidsupl";
             this.txtidsupl.Size = new System.Drawing.Size(231, 22);
             this.txtidsupl.TabIndex = 28;
+            this.txtidsupl.TextChanged += new System.EventHandler(this.txtidsupl_TextChanged);
             // 
             // label4
             // 
@@ -81,6 +85,7 @@
             this.label4.Size = new System.Drawing.Size(56, 16);
             this.label4.TabIndex = 26;
             this.label4.Text = "No Telp";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -90,6 +95,7 @@
             this.label3.Size = new System.Drawing.Size(64, 16);
             this.label3.TabIndex = 25;
             this.label3.Text = "Kota Asal";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -99,6 +105,7 @@
             this.label2.Size = new System.Drawing.Size(44, 16);
             this.label2.TabIndex = 24;
             this.label2.Text = "Nama";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -118,6 +125,7 @@
             this.btnOpen.TabIndex = 22;
             this.btnOpen.Text = "Open";
             this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
             // btnBack
             // 
@@ -168,6 +176,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(620, 157);
             this.dataGridView1.TabIndex = 17;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Suplier
             // 
