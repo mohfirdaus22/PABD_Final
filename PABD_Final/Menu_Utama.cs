@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace PABD_Final
 {
-    public partial class Form1 : Form
+    public partial class Menu_Utama : Form
     {
-        public Form1()
+        public Menu_Utama()
         {
             InitializeComponent();
-        }
-
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            Menu_Utama fmu = new Menu_Utama();
-            fmu.Show();
-            this.Hide();
         }
     }
 }
