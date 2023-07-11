@@ -184,6 +184,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Koki";
             this.Text = "Koki";
+            this.Load += new System.EventHandler(this.Koki_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
