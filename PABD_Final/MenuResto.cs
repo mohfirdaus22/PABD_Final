@@ -46,11 +46,19 @@ namespace PABD_Final
         public MenuResto()
         {
             InitializeComponent();
+            koneksi = new SqlConnection(stringConnection);
+            refreshform();
         }
 
         private void MenuResto_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            dataGridView();
+            btnOpen.Enabled = false;
         }
     }
 }
