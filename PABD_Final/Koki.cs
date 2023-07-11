@@ -129,7 +129,9 @@ namespace PABD_Final
 
         private void btnBack_Click(object sender, EventArgs e)
         {
+
             this.Close();
+
         }
     }
 }
