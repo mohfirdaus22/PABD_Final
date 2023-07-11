@@ -17,6 +17,20 @@ namespace PABD_Final
         private string stringConnection = "data source=Jorengezzz\\THEPASHTER;" + "database=Restaurant_K1;User ID=sa;password=Salahtompo22";
         private SqlConnection koneksi;
 
+        //membuat sndiri refresh form
+        private void refreshform()
+        {
+            txtidkasir.Text = "";
+            txtnama.Text = "";
+            txtnotelp.Text = "";
+            txtemail.Text = "";
+
+            btnClear.Enabled = false;
+            btnSave.Enabled = false;
+            btnOpen.Enabled = false;
+
+        }
+
         public Kasir()
         {
             InitializeComponent();
