@@ -33,12 +33,34 @@ namespace PABD_Final
             btnOpen.Enabled = false;
 
         }
+
+        //bikin
+        private void Kasircbx()
+        {
+            koneksi.Open();
+            string str = "select Id_kasir  from dbo.Kasir";
+            SqlCommand cmd = new SqlCommand(str, koneksi);
+            SqlDataAdapter da = new SqlDataAdapter(str, koneksi);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            cmd.ExecuteReader();
+            koneksi.Close();
+            cbxidkasir.ValueMember = "Id_kasir";
+            cbxidkasir.DataSource = ds.Tables[0];
+        }
+
+
         public Pembeli()
         {
             InitializeComponent();
         }
 
         private void Pembeli_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
         {
 
         }
