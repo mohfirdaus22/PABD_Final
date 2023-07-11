@@ -27,7 +27,7 @@ namespace PABD_Final
             txtnotelp.Text = "";
             txtemail.Text = "";
             txtalamat.Text = "";
-            cbxidkasir.Text = "";
+           
             btnClear.Enabled = false;
             btnSave.Enabled = false;
             btnOpen.Enabled = false;
@@ -35,24 +35,24 @@ namespace PABD_Final
         }
 
         //bikin
-        private void Kasircbx()
+        //buat datagrid
+        private void dataGridView()
         {
             koneksi.Open();
-            string str = "select Id_kasir  from dbo.Kasir";
-            SqlCommand cmd = new SqlCommand(str, koneksi);
-            SqlDataAdapter da = new SqlDataAdapter(str, koneksi);
+            string query = "SELECT Id_pembeli, Nama, Alamat, No_telp, Email FROM dbo.Pembeli";
+            SqlDataAdapter da = new SqlDataAdapter(query, koneksi);
             DataSet ds = new DataSet();
             da.Fill(ds);
-            cmd.ExecuteReader();
+            dataGridView1.DataSource = ds.Tables[0];
             koneksi.Close();
-            cbxidkasir.ValueMember = "Id_kasir";
-            cbxidkasir.DataSource = ds.Tables[0];
         }
 
 
         public Pembeli()
         {
             InitializeComponent();
+            koneksi = new SqlConnection(stringConnection);
+            refreshform();
         }
 
         private void Pembeli_Load(object sender, EventArgs e)

@@ -39,13 +39,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.txtidpembeli = new System.Windows.Forms.TextBox();
             this.txtnama = new System.Windows.Forms.TextBox();
             this.txtalamat = new System.Windows.Forms.TextBox();
             this.txtnotelp = new System.Windows.Forms.TextBox();
             this.txtemail = new System.Windows.Forms.TextBox();
-            this.cbxidkasir = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -150,15 +148,6 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Email";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(186, 367);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 16);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Id Kasir";
-            // 
             // txtidpembeli
             // 
             this.txtidpembeli.Location = new System.Drawing.Point(343, 227);
@@ -194,26 +183,16 @@
             this.txtemail.Size = new System.Drawing.Size(231, 22);
             this.txtemail.TabIndex = 16;
             // 
-            // cbxidkasir
-            // 
-            this.cbxidkasir.FormattingEnabled = true;
-            this.cbxidkasir.Location = new System.Drawing.Point(343, 359);
-            this.cbxidkasir.Name = "cbxidkasir";
-            this.cbxidkasir.Size = new System.Drawing.Size(231, 24);
-            this.cbxidkasir.TabIndex = 17;
-            // 
             // Pembeli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.cbxidkasir);
             this.Controls.Add(this.txtemail);
             this.Controls.Add(this.txtnotelp);
             this.Controls.Add(this.txtalamat);
             this.Controls.Add(this.txtnama);
             this.Controls.Add(this.txtidpembeli);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -247,12 +226,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtidpembeli;
         private System.Windows.Forms.TextBox txtnama;
         private System.Windows.Forms.TextBox txtalamat;
         private System.Windows.Forms.TextBox txtnotelp;
         private System.Windows.Forms.TextBox txtemail;
-        private System.Windows.Forms.ComboBox cbxidkasir;
     }
 }
