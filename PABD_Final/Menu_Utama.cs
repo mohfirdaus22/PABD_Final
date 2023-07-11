@@ -25,5 +25,12 @@ namespace PABD_Final
             fk.Show();
             this.Hide();
         }
+
+        private void btnKasir_Click(object sender, EventArgs e)
+        {
+            Kasir fkas = new Kasir();   
+            fkas.Show();
+            this.Hide();
+        }
     }
 }
