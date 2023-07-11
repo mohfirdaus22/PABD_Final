@@ -184,6 +184,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Kasir";
             this.Text = "Kasir";
+            this.Load += new System.EventHandler(this.Kasir_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
