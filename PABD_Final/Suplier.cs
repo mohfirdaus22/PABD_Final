@@ -47,6 +47,8 @@ namespace PABD_Final
         public Suplier()
         {
             InitializeComponent();
+            koneksi = new SqlConnection(stringConnection);
+            refreshform();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -56,6 +58,52 @@ namespace PABD_Final
 
         private void Suplier_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            string idsupl = txtidsupl.Text;
+            string nama = txtnama.Text;
+            string notelp = txtnotelp.Text;
+            string kotaasal = txtkotaasal.Text;
+
+            if (idsupl == "")
+            {
+                MessageBox.Show("Masukkan Id Suplier", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            if (nama == "")
+            {
+                MessageBox.Show("Masukkan Nama", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            if (notelp == "")
+            {
+                MessageBox.Show("Masukkan No Telp", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
+            if (kotaasal == "")
+            {
+                MessageBox.Show("Masukkan Kota Asal", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                koneksi.Open();
+                string str = "INSERT INTO Pembeli (Id_supl, Nama,No_telp, Kota_asal) VALUES (@id_supl, @nama, @No_telp, @kotaasal)";
+                SqlCommand cmd = new SqlCommand(str, koneksi);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.Add(new SqlParameter("@Id_supl", idsupl));
+                cmd.Parameters.Add(new SqlParameter("@No_telp", notelp));
+                cmd.Parameters.Add(new SqlParameter("@Nama", nama));
+                cmd.Parameters.Add(new SqlParameter("@Kota_asal", kotaasal));
+
+                cmd.ExecuteNonQuery();
+
+                koneksi.Close();
+                MessageBox.Show("Data Berhasil Disimpan", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dataGridView();
+                refreshform();
+            }
+
 
         }
     }
