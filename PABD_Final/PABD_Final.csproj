@@ -75,6 +75,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Kasir.resx">
+      <DependentUpon>Kasir.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Koki.resx">
       <DependentUpon>Koki.cs</DependentUpon>
     </EmbeddedResource>
