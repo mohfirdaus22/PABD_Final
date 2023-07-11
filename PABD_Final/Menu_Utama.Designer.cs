@@ -79,6 +79,7 @@
             this.btnKoki.TabIndex = 5;
             this.btnKoki.Text = "Koki";
             this.btnKoki.UseVisualStyleBackColor = true;
+            this.btnKoki.Click += new System.EventHandler(this.btnKoki_Click);
             // 
             // Menu_Utama
             // 

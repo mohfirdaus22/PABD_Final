@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace PABD_Final
 {
-    public partial class Menu_Utama : Form
+    public partial class Koki : Form
     {
-        public Menu_Utama()
+        public Koki()
         {
             InitializeComponent();
-        }
-
-
-        //button koki
-        private void btnKoki_Click(object sender, EventArgs e)
-        {
-            Koki fk = new Koki();
-            fk.Show();
-            this.Hide();
         }
     }
 }

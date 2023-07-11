@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Koki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Koki.Designer.cs">
+      <DependentUpon>Koki.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu_Utama.cs">
       <SubType>Form</SubType>
     </Compile>
