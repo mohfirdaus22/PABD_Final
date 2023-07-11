@@ -39,5 +39,12 @@ namespace PABD_Final
             fp.Show();
             this.Hide();
         }
+
+        private void btnSuplier_Click(object sender, EventArgs e)
+        {
+            Suplier fs = new Suplier();
+            fs.Show();
+            this.Hide();
+        }
     }
 }

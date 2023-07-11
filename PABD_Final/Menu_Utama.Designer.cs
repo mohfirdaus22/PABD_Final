@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnSuplier = new System.Windows.Forms.Button();
             this.btnPembeli = new System.Windows.Forms.Button();
             this.btnKasir = new System.Windows.Forms.Button();
             this.btnKoki = new System.Windows.Forms.Button();
@@ -44,14 +44,15 @@
             this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnSuplier
             // 
-            this.button4.Location = new System.Drawing.Point(486, 179);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(105, 93);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnSuplier.Location = new System.Drawing.Point(486, 179);
+            this.btnSuplier.Name = "btnSuplier";
+            this.btnSuplier.Size = new System.Drawing.Size(105, 93);
+            this.btnSuplier.TabIndex = 8;
+            this.btnSuplier.Text = "Suplier";
+            this.btnSuplier.UseVisualStyleBackColor = true;
+            this.btnSuplier.Click += new System.EventHandler(this.btnSuplier_Click);
             // 
             // btnPembeli
             // 
@@ -89,7 +90,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnSuplier);
             this.Controls.Add(this.btnPembeli);
             this.Controls.Add(this.btnKasir);
             this.Controls.Add(this.btnKoki);
@@ -102,7 +103,7 @@
         #endregion
 
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnSuplier;
         private System.Windows.Forms.Button btnPembeli;
         private System.Windows.Forms.Button btnKasir;
         private System.Windows.Forms.Button btnKoki;
