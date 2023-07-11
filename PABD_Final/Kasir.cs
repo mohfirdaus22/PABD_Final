@@ -61,5 +61,18 @@ namespace PABD_Final
             dataGridView();
             btnOpen.Enabled = false;
         }
+
+        //button Add
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            txtidkasir.Enabled = true;
+            txtnama.Enabled = true;
+            txtnotelp.Enabled = true;
+            txtemail.Enabled = true;
+            btnSave.Enabled = true;
+            btnOpen.Enabled = true;
+            btnClear.Enabled = true;
+
+        }
     }
 }
