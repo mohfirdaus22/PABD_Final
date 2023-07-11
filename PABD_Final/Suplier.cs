@@ -106,5 +106,18 @@ namespace PABD_Final
 
 
         }
+
+        //button add
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            txtidsupl.Enabled = true;
+            txtnama.Enabled = true;
+            txtnotelp.Enabled = true;
+            txtkotaasal.Enabled = true;
+            btnSave.Enabled = true;
+            btnOpen.Enabled = true;
+            btnClear.Enabled = true;
+
+        }
     }
 }
