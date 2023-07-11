@@ -30,6 +30,19 @@ namespace PABD_Final
             btnOpen.Enabled = false;
 
         }
+
+        //buat datagrid
+        private void dataGridView()
+        {
+            koneksi.Open();
+            string query = "SELECT Kode_menu, Nama, Stok, Harga FROM dbo.Menu";
+            SqlDataAdapter da = new SqlDataAdapter(query, koneksi);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            dataGridView1.DataSource = ds.Tables[0];
+            koneksi.Close();
+        }
+
         public MenuResto()
         {
             InitializeComponent();
