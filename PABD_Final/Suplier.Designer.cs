@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.txtnotelp = new System.Windows.Forms.TextBox();
-            this.txtalamat = new System.Windows.Forms.TextBox();
+            this.txtkotaasal = new System.Windows.Forms.TextBox();
             this.txtnama = new System.Windows.Forms.TextBox();
-            this.txtidpembeli = new System.Windows.Forms.TextBox();
+            this.txtidsupl = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,12 +52,12 @@
             this.txtnotelp.Size = new System.Drawing.Size(231, 22);
             this.txtnotelp.TabIndex = 31;
             // 
-            // txtalamat
+            // txtkotaasal
             // 
-            this.txtalamat.Location = new System.Drawing.Point(343, 281);
-            this.txtalamat.Name = "txtalamat";
-            this.txtalamat.Size = new System.Drawing.Size(231, 22);
-            this.txtalamat.TabIndex = 30;
+            this.txtkotaasal.Location = new System.Drawing.Point(343, 281);
+            this.txtkotaasal.Name = "txtkotaasal";
+            this.txtkotaasal.Size = new System.Drawing.Size(231, 22);
+            this.txtkotaasal.TabIndex = 30;
             // 
             // txtnama
             // 
@@ -66,12 +66,12 @@
             this.txtnama.Size = new System.Drawing.Size(231, 22);
             this.txtnama.TabIndex = 29;
             // 
-            // txtidpembeli
+            // txtidsupl
             // 
-            this.txtidpembeli.Location = new System.Drawing.Point(343, 230);
-            this.txtidpembeli.Name = "txtidpembeli";
-            this.txtidpembeli.Size = new System.Drawing.Size(231, 22);
-            this.txtidpembeli.TabIndex = 28;
+            this.txtidsupl.Location = new System.Drawing.Point(343, 230);
+            this.txtidsupl.Name = "txtidsupl";
+            this.txtidsupl.Size = new System.Drawing.Size(231, 22);
+            this.txtidsupl.TabIndex = 28;
             // 
             // label4
             // 
@@ -171,9 +171,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtnotelp);
-            this.Controls.Add(this.txtalamat);
+            this.Controls.Add(this.txtkotaasal);
             this.Controls.Add(this.txtnama);
-            this.Controls.Add(this.txtidpembeli);
+            this.Controls.Add(this.txtidsupl);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -186,6 +186,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Suplier";
             this.Text = "Suplier";
+            this.Load += new System.EventHandler(this.Suplier_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -194,9 +195,9 @@
 
         #endregion
         private System.Windows.Forms.TextBox txtnotelp;
-        private System.Windows.Forms.TextBox txtalamat;
+        private System.Windows.Forms.TextBox txtkotaasal;
         private System.Windows.Forms.TextBox txtnama;
-        private System.Windows.Forms.TextBox txtidpembeli;
+        private System.Windows.Forms.TextBox txtidsupl;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
