@@ -76,5 +76,49 @@ namespace PABD_Final
             btnClear.Enabled = true;
 
         }
+
+        //button save
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            string idkoki = txtidkoki.Text;
+            string nama = txtnama.Text;
+            string alamat = txtalamat.Text;
+            string notelp = txtnotelp.Text;
+
+            if (idkoki == "")
+            {
+                MessageBox.Show("Masukkan Id Pembeli", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            if (nama == "")
+            {
+                MessageBox.Show("Masukkan Nama", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            if (notelp == "")
+            {
+                MessageBox.Show("Masukkan No Telp", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            if (alamat == "")
+            {
+                MessageBox.Show("Masukkan Alamat", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                koneksi.Open();
+                string str = "INSERT INTO Koki (Id_koki, Nama, Alamat,No_telp) VALUES (@id_koki, @nama, @alamat, @No_telp)";
+                SqlCommand cmd = new SqlCommand(str, koneksi);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.Add(new SqlParameter("@Id_koki", idkoki));
+                cmd.Parameters.Add(new SqlParameter("@Alamat", alamat));
+                cmd.Parameters.Add(new SqlParameter("@No_telp", notelp));
+                cmd.Parameters.Add(new SqlParameter("@Nama", nama));
+
+                cmd.ExecuteNonQuery();
+
+                koneksi.Close();
+                MessageBox.Show("Data Berhasil Disimpan", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dataGridView();
+                refreshform();
+            }
+        }
     }
 }
