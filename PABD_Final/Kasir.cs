@@ -75,6 +75,7 @@ namespace PABD_Final
 
         }
 
+        //button save
         private void btnSave_Click(object sender, EventArgs e)
         {
             string idkasir = txtidkasir.Text;
@@ -116,6 +117,14 @@ namespace PABD_Final
                 dataGridView();
                 refreshform();
             }
+
+
+        }
+
+        //buuton clear
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            refreshform();
         }
     }
 }
