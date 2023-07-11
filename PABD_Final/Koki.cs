@@ -120,5 +120,11 @@ namespace PABD_Final
                 refreshform();
             }
         }
+
+        //button clear
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            refreshform();
+        }
     }
 }
