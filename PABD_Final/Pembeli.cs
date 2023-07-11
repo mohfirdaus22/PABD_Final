@@ -131,5 +131,17 @@ namespace PABD_Final
             btnClear.Enabled = true;
 
         }
+
+        //button clear
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            refreshform();
+        }
+
+        //button back
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
