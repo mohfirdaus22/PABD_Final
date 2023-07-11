@@ -105,8 +105,8 @@ namespace PABD_Final
                 string str = "INSERT INTO Kasir (Id_kasir, Nama, Email,No_telp) VALUES (@id_kasir, @nama, @email, @No_telp)";
                 SqlCommand cmd = new SqlCommand(str, koneksi);
                 cmd.CommandType = CommandType.Text;
-                cmd.Parameters.Add(new SqlParameter("@Id_koki", idkasir));
-                cmd.Parameters.Add(new SqlParameter("@Alamat", email));
+                cmd.Parameters.Add(new SqlParameter("@Id_kasir", idkasir));
+                cmd.Parameters.Add(new SqlParameter("@email", email));
                 cmd.Parameters.Add(new SqlParameter("@No_telp", notelp));
                 cmd.Parameters.Add(new SqlParameter("@Nama", nama));
 
@@ -125,6 +125,11 @@ namespace PABD_Final
         private void btnClear_Click(object sender, EventArgs e)
         {
             refreshform();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
