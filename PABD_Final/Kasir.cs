@@ -46,11 +46,20 @@ namespace PABD_Final
         public Kasir()
         {
             InitializeComponent();
+            koneksi = new SqlConnection(stringConnection);
+            refreshform();
         }
 
         private void Kasir_Load(object sender, EventArgs e)
         {
 
+        }
+
+        //button open
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            dataGridView();
+            btnOpen.Enabled = false;
         }
     }
 }
